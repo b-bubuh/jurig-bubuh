@@ -1,0 +1,30 @@
+      <div class="taglist-wrapper clearfix">
+        <ul id="taglist" class="taglist">
+
+            <!-- Daftar Tag -->
+            <li class="topik hidemobile"><a href="#">Topik</a>
+              <!--
+              {{#if tags}}
+                <ul>
+                  {{#foreach tags}}<li><a href="{{url}}" title="Tulisan seputar {{name}}">{{name}}</a></li>{{/foreach}}
+                </ul>
+              {{/if}}
+              -->
+              <ul>
+                <li><a href="/tag/tekno">Tekno</a></li>
+                <li><a href="/tag/howto">Howto</a></li>
+                <li><a href="/tag/ragam">Ragam</a></li>
+                <li><a href="/tag/opini">Opini</a></li>
+                <li><a href="/tag/pribadi">Pribadi</a></li>
+                <li><a href="/tag/fotografi">Fotografi</a></li>
+                <li><a href="/tag/podcast">Podcast</a></li>
+                <li><a href="/tag/musik">Musik</a></li>
+              </ul>
+            </li>
+
+            <!-- Halaman Statis atau URL -->
+            {{#foreach navigation}}
+                <li class="page{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+            {{/foreach}}
+        </ul>
+      </div>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='HandheldFriendly' content='True'>
+    <meta name='description' content='{{meta_description}}'>
+    <link rel='author' href='//plus.google.com/+ArisSRipandi'>
+    <link rel='publisher' href='//plus.google.com/+ArisSRipandi'>
+    <title>{{meta_title}}</title>
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Slabo+27px|Josefin+Sans:300,400,600'>
+    <link rel='stylesheet' href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fluidbox/1.4.2/css/fluidbox.css">
+    <link rel='stylesheet' href='//res.cloudinary.com/ariss/raw/upload/v1433968176/monokai.css'>
+    <link rel='icon' href='//kx.ucarecdn.com/57adc0d0-4825-4cd9-ac33-c4b2cb0d508d/'>
+    <!--link rel='stylesheet' href="{{asset 'instawidget.css'}}"-->
+    <link rel='stylesheet' href="{{asset 'webkido.css'}}">
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    {{{body}}}
+    <footer class="site-footer clearfix">
+         <section class="copyright">Hosted at <a href="//openshift.com/" target="_blank">OpenShift</a></section>
+         <section class="poweredby">Thanks to <a href="//ghost.org/" target="_blank">Ghost</a></section>
+    </footer>
+    {{ghost_foot}}
+    <script src="//res.cloudinary.com/ariss/raw/upload/v1444558183/blogres/jq.packs.js"></script>
+    <script src="//res.cloudinary.com/ariss/raw/upload/v1444558133/blogres/madmimi.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/fluidbox/1.4.2/jquery.fluidbox.min.js'></script>
+    <script src='//res.cloudinary.com/ariss/raw/upload/v1433968176/highlight.pack.js'></script>
+    <script src='//res.cloudinary.com/ariss/raw/upload/v1434281569/Analyticus.js'></script>
+    <!--script src="{{asset 'instawidget.js'}}"></script-->
+    <script src="{{asset 'webkido.js'}}"></script>
+    <script>
+      $(document).ready(function() {
+        $("#instawidget").ProfileWidget({username: "riespandi", clientID: "4eac924f4f0046a1a563d20d0795610e"});
+        $('.related-posts').ghostRelated({tagsClass: '.post-meta'});
+        $('a').fluidbox({viewportFill: 0.8,});
+        //$('img').addClass('watermark');
+      });
+      hljs.initHighlightingOnLoad();
+    </script>
+	<!-- Piwik -->
+	<script type="text/javascript">
+	  var _paq = _paq || [];
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+	    var u="//webstat.ariss.id/";
+	    _paq.push(['setTrackerUrl', u+'piwik.php']);
+	    _paq.push(['setSiteId', 1]);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
+	<noscript><p><img src="//webstat.ariss.id/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+    "name": "openshift-ghost",
+    "description" : "Starterkit Ghost di OpenShift berdasarkan dari openshift-ghost-quickstart (MySQL + Cloudinary)",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.com/riespandi/openshift-ghost.git"
+    },
+    "main": "index.js",
+    "scripts": {
+        "start": "node index"
+    },
+    "engines": {
+        "node": "^0.10.0 || ^0.12.0",
+        "iojs": "^1.2.0"
+    },
+    "dependencies": {
+        "ghost": "0.7.1",
+        "lodash": "~2.4.1",
+        "bluebird": "~2.10.2",
+        "cloudinary": "~1.2.4"
+    }
+}

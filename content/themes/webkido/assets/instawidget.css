@@ -1,0 +1,155 @@
+.insta-profile-widget {
+	width:296px; 
+	border:1px solid #000000; 
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.4); 
+	border-radius:5px; 
+	background:#ffffff;
+	overflow:hidden;
+}
+
+.insta-profile-widget a, .insta-profile-widget a:hover {text-decoration: none;}
+.insta-profile-images {position:relative;}
+.insta-profile-images:before, .insta-profile-images:after {content: " "; display: table;}
+.insta-profile-images:after {clear: both;}
+.insta-profile-images {*zoom: 1;}
+
+.insta-profile-table {
+	display:table;
+	width:100%;
+	table-layout:fixed;
+	border-collapse:collapse;
+	margin-top:-1px;
+	margin-left:-1px;
+	height:100%;
+}
+
+.insta-profile-cell {
+	display:table-cell;
+	width:33.3%;
+	height:82px;
+	float:left;
+	border:solid black 1px;
+	border-left:0px;
+	background-size: cover;
+	background-position: center;
+	background-color:#000000;
+	overflow:hidden;
+	position:relative;
+}
+
+.insta-profile-cell.first {
+	border-right:0px;	
+}
+
+.insta-profile-cell-image {
+	width:33.3%;
+	height:82px;
+	background-size: cover;
+	background-position: center;
+	display:none;
+	position:relative;
+	z-index:1;
+}
+
+.insta-profile-cell-image.load {opacity:1;}
+
+.insta-profile-details {
+	position: relative; background: #ffffff;
+	background: linear-gradient(to bottom,  #ffffff 0%,#f3f3f3 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f3f3f3',GradientType=0);
+	height:46px; border-bottom:1px solid #cecece;
+}
+
+.insta-profile-details h1 {
+	text-align:center;
+	font-size:17px;
+	line-height:50px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:500;
+	margin:0;
+	letter-spacing: -0.04em;
+	text-shadow: 1px 0px 0px #ffffff;	
+}
+
+.insta-profile-icon {
+	width:24px;
+	height:25px;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDNCNDVGQTNDQUI2MTFFMzg1OTlENEJFQjFBMzY5QTMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDNCNDVGQTRDQUI2MTFFMzg1OTlENEJFQjFBMzY5QTMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0M0I0NUZBMUNBQjYxMUUzODU5OUQ0QkVCMUEzNjlBMyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0M0I0NUZBMkNBQjYxMUUzODU5OUQ0QkVCMUEzNjlBMyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmD4mu0AAAM0SURBVHjarFVLb1JREL4XECRYi7xElAJXKKXFxJiYtKu6MTEhaaILFy4aVhZ/QBdo4sqtcc3GNP0DGrtQy6Ybg4mJDU1bohiKaUKjpQ+g8mgL+E0zt15osVE6ycc5Z86cb+6ZmTOIgiCoAA9wCdAJpyM1YA1YES0WS38+n1djkQOqp+TgLOAAd13l8Xh6sch2Qd4DmBW4ADSJk7kFF3v8H5yfnZ0dq9fr+SbLzs7Oe+jtvO/S4Ge/i1BoHQ6HpFKpApivk8JgMIxhUPP+PiVY7Aarq6s/ZHKWN8p9zT98Ldlqeb7LN29Wq9W60kgURVXLGnACG38LA6Cfnp4OjIyM3CRFIpH4ND4+nsK0IkmSN5PJFDEvU8nr9Xp7pVL5jnmJky70Ueg6wBwKhQJbW1uvkb8lIMZYIh3twcYK0HgDuA5cVpzvk6voHMMGmBRrZ7FYfAvCB+3XIh3tcQRkexNzyGuX0oEjlUpF4/H4fTY0zczM3AXRnU6xoz2yke3pLHEQl+xAWUXagYEBN8rOyy3jjN1udyFp7zo5oD2yIVuqe6fT6SMOztsBb0uZQiZyuVyW+5OI+fpJpcU2B+ez2ewKxgklZ/s7EMxms4ZLsj43N7dxkgO2oVLV2Gw2jaI6DzmvAkYehVKpdI8aIOsGuUo6iZVtjHSGziIvRzhbFjAwJZPJJ5heAS4ajcZRTlq7ULe8RTZUmnSGzrY7OBIi5GHT7/dbJycnKXma7e3tNEZKHDm6xqC5G23+K9nA1u3z+eg2m8eFyMdl5lOUnxWvMRGLxUJcxhau9yDDyWf6otHoaLlc/oAzdvp6vkELZz8/6f62Gvc3Go3P6XT6BRJPL1Xifz6CRLr5+fnHe3t7SdgOyuTs4JBT5MUGK74BDYUTquen6PePCoXCx1qtViC9TqfrhQyr1epXWEaV3ZSbnVfmlB1Q7HqQNC3i+uWYF0vXvc3XFtg+TvniL/5TVlarHxy73OxMYjgcHp6amspwQtzcS7qRn/wX3AS3JC4uLj4LBoMvofilDE+XQmEyLCwshFWBQEBcXl5+GIlEvHLT6hbERZxDQ0Pag0QCz4G15unJGnNqfwswAG7gpTDFxK12AAAAAElFTkSuQmCC');
+	position:absolute;
+	left:12px;
+	top:50%;
+	margin-top:-11px;
+}
+
+.insta-profile-avatar {
+	padding:0;
+	background-color:#ffffff;
+	border:1px solid rgba(0,0,0,0.6);
+	border-radius:5px;
+	width:70px; height:70px;
+	position:absolute;
+	left:50%;
+	top:-60px;
+	margin-left:-39px;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.4); 
+	z-index:99;
+}
+.insta-profile-avatar img {width:70px; height:70px; border-radius:5px;}
+
+.insta-profile-username {padding-top: 3px;}
+
+.insta-profile-stat {
+	float:left;
+	height: auto;
+	line-height: 12pt;
+	box-sizing:border-box;
+	padding:7px 13px;	
+	font-size:10px;
+	color:#777777;
+	text-transform:uppercase;
+	font-family: 'Lato', sans-serif;	
+	font-weight:400;
+	text-align:center;
+}
+
+.insta-profile-stat strong {
+	display:block;	
+	font-family:'Roboto', sans-serif;
+	color:#111111;
+	font-size:14px;
+	font-weight:500;
+}
+
+.insta-profile-divider {
+	float:left;
+	width:1px;
+	height:45px;
+	background:#ececec;	
+}
+
+.insta-profile-btn {
+	display:block;
+	float:right;
+	margin:9px;
+	padding:4px 11px;
+	font-size:12px;
+	color:#ffffff;
+	text-decoration:none;
+	border:1px solid #006314;
+	border-radius:3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	font-family:'Roboto', sans-serif;
+	text-shadow:0px 1px 1px rgba(0,0,0,0.4);
+	background: rgb(72,199,99);
+	background: -moz-linear-gradient(top,  rgba(72,199,99,1) 0%, rgba(54,169,76,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(72,199,99,1)), color-stop(100%,rgba(54,169,76,1)));
+	background: -webkit-linear-gradient(top,  rgba(72,199,99,1) 0%,rgba(54,169,76,1) 100%);
+	background: -o-linear-gradient(top,  rgba(72,199,99,1) 0%,rgba(54,169,76,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(72,199,99,1) 0%,rgba(54,169,76,1) 100%);
+	background: linear-gradient(to bottom,  rgba(72,199,99,1) 0%,rgba(54,169,76,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48c763', endColorstr='#36a94c',GradientType=0 );
+	line-height: 17px;
+}
+
+.insta-profile-btn:active {background:#37aa4d;}

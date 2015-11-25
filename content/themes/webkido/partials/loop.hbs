@@ -1,0 +1,20 @@
+{{#foreach posts}}
+    <article class="box {{post_class}}">
+        {{#if image}}<section class="post-image" style="background-image:url({{image}})"></section>{{/if}}
+        <header class="post-header">
+            <h2 class="post-title">
+            <a href="{{url}}">{{{title}}}</a></h2>
+        </header>
+        <section class="post-excerpt">
+            <p>{{excerpt words="64"}}...</p>
+        </section>
+        <footer class="post-meta">
+            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+            <!--span class="author"> - Penulis: {{author}}</span-->
+            <span class="post-tags"> - Tag: {{tags}}</span>
+            <span class="read-more"><a href="{{url}}">Keep reading &rarr;</a></span>
+        </footer>
+    </article>
+{{/foreach}}
+
+{{pagination}}

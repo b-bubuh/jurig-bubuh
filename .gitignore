@@ -1,0 +1,9 @@
+node_modules/
+build/Release
+catetan.md
+logs
+pids
+*.log
+*.pid
+*.seed
+.grunt

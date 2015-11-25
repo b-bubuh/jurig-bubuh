@@ -1,0 +1,10 @@
+
+<header id="header">
+    <nav class="header-nav" {{#if @blog.cover}}style="background-image:url({{@blog.cover}})"{{/if}}>
+      <div class="blog-title">
+        <a href="{{@blog.url}}">{{@blog.title}}</a>
+        <!--span class="subtitle"> // {{@blog.description}}</span-->
+      </div>
+      {{navigation}}
+    </nav>
+</header>
